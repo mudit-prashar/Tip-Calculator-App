@@ -1,7 +1,7 @@
 ```
 ---
-Assignment: Android App (Tip Calculator)
-author: Mudit Prashar
+Android App (Tip Calculator)
+Author: Mudit Prashar
 date: 10/07/2019
 ---
 ```
