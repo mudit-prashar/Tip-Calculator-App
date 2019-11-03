@@ -1,4 +1,4 @@
-# Tip-Calculator-App
+
 ```
 ---
 Android App (Tip Calculator)
