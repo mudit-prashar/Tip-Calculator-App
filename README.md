@@ -24,4 +24,4 @@ The Tip percentage outputs are calculated by dividing the **Check Amount** by th
 `Tip for 15% = ((Check Amount/Party Size)* .15)`
 
 `Total per person for 15% tips = ((Check Amount/Party Size) + ((Check Amount/Party Size)* .15))`
-<img src = "Demo.png" />
+<img src = "/Demo.png" alt ="Demo Img"/>
