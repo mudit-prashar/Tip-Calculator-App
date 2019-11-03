@@ -13,4 +13,5 @@
     <string name="_20total">20%</string>
     <string name="_25tip">25%</string>
     <string name="_25total">25%</string>
+    <string name="calculate_tip">Calculate Tip</string>
 </resources>
