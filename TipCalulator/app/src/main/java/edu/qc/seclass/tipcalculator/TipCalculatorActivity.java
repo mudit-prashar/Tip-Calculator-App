@@ -72,22 +72,22 @@ public class TipCalculatorActivity extends AppCompatActivity {
                 partySize = Integer.parseInt(partySizeValue.getText().toString());
 
                 oneFiveTip = (int) Math.round((checkAmount/partySize)* .15);
-                fifteenPercentTipValue.setText(" " + oneFiveTip);
+                fifteenPercentTipValue.setText(" $" + oneFiveTip);
 
                 twoZeroTip = (int) Math.round((checkAmount/partySize)* .20);
-                twentyPercentTipValue.setText(" " + twoZeroTip);
+                twentyPercentTipValue.setText(" $" + twoZeroTip);
 
                 twoFiveTip = (int) Math.round((checkAmount/partySize)* .25);
-                twentyfivePercentTipValue.setText(" " + twoFiveTip);
+                twentyfivePercentTipValue.setText(" $" + twoFiveTip);
 
                 oneFiveTotal = (int) Math.round((checkAmount/partySize) + oneFiveTip);
-                fifteenPercentTotalValue.setText(" " + oneFiveTotal);
+                fifteenPercentTotalValue.setText(" $" + oneFiveTotal);
 
                 twoZeroTotal = (int) Math.round((checkAmount/partySize) + twoZeroTip);
-                twentyPercentTotalValue.setText(" " + twoZeroTotal);
+                twentyPercentTotalValue.setText(" $" + twoZeroTotal);
 
                 twoFiveTotal = (int) Math.round((checkAmount/partySize) + twoFiveTip);
-                twentyfivePercentTotalValue.setText(" " + twoFiveTotal);
+                twentyfivePercentTotalValue.setText(" $" + twoFiveTotal);
 
 
             }
