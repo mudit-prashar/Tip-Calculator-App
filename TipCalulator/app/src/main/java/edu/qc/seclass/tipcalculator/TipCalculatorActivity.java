@@ -7,9 +7,11 @@ package edu.qc.seclass.tipcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -67,6 +69,7 @@ public class TipCalculatorActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Party Size field Should be filled.", Toast.LENGTH_LONG).show();
                     return;
                 }
+                closeKeyboard();
 
                 checkAmount = Double.parseDouble(checkAmountValue.getText().toString());
                 partySize = Integer.parseInt(partySizeValue.getText().toString());
@@ -126,4 +129,12 @@ public class TipCalculatorActivity extends AppCompatActivity {
         twentyfivePercentTotalValue.setKeyListener(null);
 
     }
+    public void closeKeyboard(){
+        View view = this.getCurrentFocus();
+        if(view != null){
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+    }
+
 }
